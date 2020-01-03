@@ -1,0 +1,81 @@
+First Of all welcome to my repository.
+
+Now, as you all know that setting up laravel for the first time is very hard for the new user without any ones guidence.
+
+So, let us start.
+
+First of all we have to make php command working in command prompt.
+So, that
+ 1. Go to Edit the System Environment Variables.
+ 2. In Advanced Tab, search for Environment Variables and click on it.
+ 3. Now in System variables, search for Path, and then double click on it or click on Edit button below.
+ 4. Now, Add your php installation folder location there.
+        Here, I am using xampp. So in xampp there is a folder of php. That is PHP installtion folder.
+        For me, that is "C:\xampp\php\"
+        
+        So. Add it there.
+ 5. Now save it and click on apply button.
+ 6. Now open command prompt from start menu and write "php -v" there and click enter.
+       If you get something like below then you had edited environment variables successfully and ready to go on next step.
+       
+       PHP 7.3.10 (cli) (built: Sep 24 2019 11:59:22) ( ZTS MSVC15 (Visual C++ 2017) x64 )                                     
+       Copyright (c) 1997-2018 The PHP Group                                                                                   
+       Zend Engine v3.3.10, Copyright (c) 1998-2018 Zend Technologies 
+       
+ 7. Now, go in your web browser and enter this address in address bar : https://getcomposer.org/download/
+ 
+ 8. Now, there is a topic called Command Line Installation.
+       Simply copy commands one by one from there and paste in command prompt and press enter.
+       If all of these gets completed successfully then you can use laravel.
+       
+ 9. Now, go in your htdocs directory of your xampp or wamp or other local server you are using.
+         
+         
+         Now open command prompt here.
+         Now, copy the below command and paste in cmd and press enter.
+         
+         "composer global require laravel/installer"
+         
+         Now, after this gets successfull you can make laravel project. This above command is used to make laravel offline available.
+         now to create a new project you only requires below steps to create new project every time.
+         
+         just write the command below and press enter. here blog is the name of your application. You can change it according to you,
+         
+         "laravel new blog"
+         
+        *****        OR      *****
+        If the above method not works then follow below method.
+        
+        For the below method you needs internet connection every time you creates a new laravel project.
+        
+        where as in above method you doesn't need internet connection next time for creating new project
+        
+        just use command   "laravel new blog"   where put the name you want on the place of blog
+        
+        *****        OR      *****
+        
+        just open your command prompt and then write down below code.
+        
+        "composer create-project --prefer-dist laravel/laravel blog"
+        
+        
+ 10. Now, after all this gets successfully done. use command cd and go in the folder.
+        
+        cd blog
+        
+        Now, use below command 
+        "php artisan serve" 
+        you will get something like below.
+        
+        Laravel development server started: http://127.0.0.1:8000
+        
+        now, open your browser window and go on the address given. You can see your app is ready.
+        
+        
+11.  Now you are good to go.
+
+Search on web for the what you want and go on official site and check.
+
+ELse check it in my next file.
+        
+        
